@@ -1,24 +1,26 @@
 package prova.act01.prova_act01.model;
 
 public class Student {
-    private int age;
+    private long id;
     private String nom;
     private String cognom;
-    private int any;
+    private int age;
     private String cicle;
-    private long id;
-
+    private int any;
 
     
     public Student() {
+
     }
-    public Student(int age, String nom, String cognom, int any, String cicle, long id) {
-        this.age = age;
+
+
+    public Student( long id, String nom, String cognom, int age, String cicle, int any) {
+        this.id = id;
         this.nom = nom;
         this.cognom = cognom;
-        this.any = any;
+        this.age = age;
         this.cicle = cicle;
-        this.id = id;
+        this.any = any;    
     }
     
     public int getAge() {
